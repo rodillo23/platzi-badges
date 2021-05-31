@@ -1,15 +1,13 @@
-/* const element = document.createElement('h1')
-element.innerText = 'Hello Rodo!!'
+import React from "react";
+import ReactDOM from "react-dom";
+import "bootstrap/dist/css/bootstrap.css";
+import "./global.css";
 
-const container = document.getElementById('app')
-container.appendChild(element)
+import BadgeNew from "./pages/BadgeNew";
 
- */
-import React from 'react';
-import ReactDOM from 'react-dom'
+const container = document.getElementById("app");
 
-
-const element = <h1>Hello, Platzi badges from React</h1>
-const container = document.getElementById('app')
-
-ReactDOM.render(element, container)
+ReactDOM.render(
+  <BadgeNew/>,
+  container
+);
