@@ -11,7 +11,7 @@ class BadgesList extends React.Component{
             <li key={badge.id}>
               <div className="card__container">
                 <div className="badge__container-img">
-                  <img className="badge__img" src={badge.avatarUrl} alt="Avatar image"/>
+                  <img className="badge__img" src={badge.avatarUrl} alt="Avatar"/>
                 </div>
 
                 <div className="badge__container-details">
