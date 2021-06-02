@@ -4,10 +4,11 @@ import './styles/Badges.css'
 
 import confLogo from '../images/badge-header.svg'
 import { Link } from 'react-router-dom'
+import api from '../api'
 
 class Badges extends React.Component{
 
-  constructor(props){
+  /* constructor(props){
     super(props)
     console.log('1. constructor()');
     this.state = {
@@ -68,10 +69,38 @@ class Badges extends React.Component{
   componentWillUnmount(){
     console.log('6. ComponentWillUnmount()');
     clearTimeout(this.timeoutId)
+  } */
+
+  state = {
+    loading: true,
+    error: null,
+    data: undefined
+  }
+
+  componentDidMount(){
+    this.fetchData()
+  }
+
+  fetchData = async ()=>{
+    this.setState({loading: true, error: null})
+
+    try {
+      const data = await api.badges.list()
+      this.setState({loading: false, data})
+    } catch (error) {
+      this.setState({loading: false, error})
+    }
   }
 
   render(){
-    console.log('2/4. render()');
+    
+    if(this.state.loading === true){
+      return 'Loading...'
+    }
+
+    if(this.state.error){
+      return `Error: ${this.state.error.message}`
+    }
     return(
       <React.Fragment>
 
