@@ -1,6 +1,7 @@
 import React from "react";
 import Badge from "../components/Badge";
 import BadgeForm from "../components/BadgeForm";
+import PageLoading from '../components/PageLoading'
 import "./styles/BadgeNew.css";
 import logo from "../images/platziconf-logo.svg";
 import api from '../api'
@@ -8,6 +9,8 @@ import api from '../api'
 class BadgeNew extends React.Component {
 
   state = {
+    loading: false,
+    error: null,
     form : {
       firstName : '',
       lastName : '',
@@ -31,7 +34,9 @@ class BadgeNew extends React.Component {
     this.setState({loading: true, error: null})
     try {
       await api.badges.create(this.state.form)
-    this.setState({loading: false})
+      this.setState({loading: false})
+
+      this.props.history.push('/badges')
     } catch (error) {
       this.setState({loading: false, error: error.message})
     }
@@ -48,6 +53,7 @@ class BadgeNew extends React.Component {
 
         <div className="container">
           <div className="row">
+            {this.state.loading && <PageLoading/>}
             <div className="col-6">
               <Badge
                 avatarUrl='https://www.gravatar.com/avatar/?d=identicon'
@@ -60,10 +66,12 @@ class BadgeNew extends React.Component {
             </div>
 
             <div className="col-6">
+              <h1>New Attendant</h1>
               <BadgeForm 
                 onChange={this.handleChange} 
                 onSubmit={this.handleSubmit}
                 formValues={this.state.form}
+                error={this.state.error}
               />
             </div>
           </div>

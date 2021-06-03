@@ -2,11 +2,11 @@
   "badges": [
     {
       "id": "2de30c42-9deb-40fc-a41f-05e62b5939a7",
-      "firstName": "Freda",
-      "lastName": "Grady",
-      "email": "Leann_Berge@gmail.com",
-      "jobTitle": "Legacy Brand Director",
-      "twitter": "FredaGrady22221-7573",
+      "firstName": "Fredyy",
+      "lastName": "Vega",
+      "email": "freddier@gmail.com",
+      "jobTitle": "CEO Platzi",
+      "twitter": "@freddier",
       "avatarUrl": "https://www.gravatar.com/avatar/f63a9c45aca0e7e7de0782a6b1dff40b?d=identicon"
     },
     {
@@ -448,6 +448,38 @@
       "jobTitle": "Frontend Engineer",
       "twitter": "@ficr23",
       "id": "uwhKCbO"
+    },
+    {
+      "firstName": "Samantha",
+      "lastName": "Figueroa",
+      "email": "samy_princess@gmail.com",
+      "jobTitle": "engineer",
+      "twitter": "ficr23",
+      "id": "fkYf6OL"
+    },
+    {
+      "firstName": "Sarah",
+      "lastName": "Figueroa",
+      "email": "sarita@gmail.com",
+      "jobTitle": "Full Stack Developer",
+      "twitter": "ficr23",
+      "id": "Wbhaa0A"
+    },
+    {
+      "firstName": "Jose Rodolfo",
+      "lastName": "Figueroa Chavez",
+      "email": "ficr233@gmail.com",
+      "jobTitle": "engineer",
+      "twitter": "ficr23",
+      "id": "xestzOG"
+    },
+    {
+      "firstName": "sarita",
+      "lastName": "jacqueline",
+      "email": "saritafig@gmail.com",
+      "jobTitle": "princess",
+      "twitter": "saris",
+      "id": "mHUx1g9"
     }
   ]
 }
