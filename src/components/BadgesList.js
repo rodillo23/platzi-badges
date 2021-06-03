@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './styles/BadgesList.css'
+import Gravatar from './Gravatar'
 
 class BadgesList extends React.Component{
   render(){
@@ -22,7 +23,10 @@ class BadgesList extends React.Component{
             <li key={badge.id}>
               <div className="card__container">
                 <div className="badge__container-img">
-                  <img className="badge__img" src={badge.avatarUrl} alt="Avatar"/>
+                  {
+                    //<img className="badge__img" src={badge.avatarUrl} alt="Avatar"/>
+                  }
+                  <Gravatar className="Badge__avatar" email={badge.email} alt="Avatar"/>
                 </div>
 
                 <div className="badge__container-details">
