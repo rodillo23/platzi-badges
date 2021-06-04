@@ -2,11 +2,11 @@
   "badges": [
     {
       "id": "2de30c42-9deb-40fc-a41f-05e62b5939a7",
-      "firstName": "Fredyy",
+      "firstName": "Fredyyna",
       "lastName": "Vega",
       "email": "freddier@gmail.com",
       "jobTitle": "CEO Platzi",
-      "twitter": "@freddier",
+      "twitter": "freddier",
       "avatarUrl": "https://www.gravatar.com/avatar/f63a9c45aca0e7e7de0782a6b1dff40b?d=identicon"
     },
     {
@@ -30,7 +30,7 @@
     {
       "id": "a9748581-dfdc-4a78-930d-5205a2ccef48",
       "firstName": "Tatyana",
-      "lastName": "Von",
+      "lastName": "Vonludwits",
       "email": "Herminio.Schmeler@hotmail.com",
       "jobTitle": "Central Branding Representative",
       "twitter": "TatyanaVon35871-3686",
@@ -480,6 +480,14 @@
       "jobTitle": "princess",
       "twitter": "saris",
       "id": "mHUx1g9"
+    },
+    {
+      "firstName": "samanthita",
+      "lastName": "figueroa",
+      "email": "samy@gmail.com",
+      "jobTitle": "engineer",
+      "twitter": "princesssss",
+      "id": "Jkx3YuX"
     }
   ]
 }
